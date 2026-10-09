@@ -1,0 +1,32 @@
+# QuickMark configuration for Quizzosaurus
+# Pragmatic settings for a documentation-heavy repository rather than a pure 'code' project.
+
+[linters.severity]
+# All rules default to 'err' (error).
+# Here we switch off rules that are impractical for documentation.
+
+# Line length: often impractical in Markdown docs (links, code examples)
+line-length = "off"
+# Inline HTML: needed for some formatting
+no-inline-html = "off"
+# Bare URLs: fine for references and external links
+no-bare-urls = "off"
+no-duplicate-heading = "off"
+# Shared partials deliberately start without an H1, because the including page provides the heading
+first-line-heading = "off"
+
+# Configured rule settings
+[linters.settings.heading-style]
+style = "consistent"
+[linters.settings.ul-style]
+style = "consistent"
+[linters.settings.ol-prefix]
+style = "one_or_ordered"
+[linters.settings.code-block-style]
+style = "consistent"
+[linters.settings.code-fence-style]
+style = "consistent"
+[linters.settings.emphasis-style]
+style = "consistent"
+[linters.settings.strong-style]
+style = "consistent"

@@ -1,0 +1,14 @@
+# npm tarballs
+*.tgz
+
+# Build output
+build/
+dist/
+
+# Editor / OS
+.DS_Store
+node_modules/
+
+# Personal Claude Code settings
+.claude/settings.json
+.claude/settings.local.json
